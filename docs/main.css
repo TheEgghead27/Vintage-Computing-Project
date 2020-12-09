@@ -65,6 +65,17 @@ nav li a:hover {
 
 /* https://www.w3schools.com/css/css_align.asp */
 div {
-  margin-left:30.5%;
+  margin-left: calc(14.5% + 228px);
+  margin-right:14.5%;
+  height: calc(100vh - 2px);
+  text-align: center;
   padding:1px 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* https://stackoverflow.com/questions/4684304/how-can-i-resize-an-image-dynamically-with-css-as-the-browser-width-height-chang */
+div img {
+  max-width: 100%;
+  height: auto;
 }
