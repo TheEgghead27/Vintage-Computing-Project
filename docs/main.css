@@ -1,34 +1,70 @@
+/* Custom font based on https://www.w3schools.com/css/css3_fonts.asp */
+@font-face {
+  font-family: pstart;
+  src: url(Press_Start/PressStart2P-Regular.ttf);
+}
+
 html {
-  /*
-  color: blue;
-  background-image: url('images/bliss.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  */
-  background-color: #c9975d;
-}
-
-body {
-  font-family: Arial;
-  /* font-smooth: never; */
-}
-
-nav ul {
-  list-style-type: none;
+  /* Big McThankies from McSpankies, https://css-tricks.com/perfect-full-page-background-image/ */
+  background: url('images/bliss.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #008080;  /* Windows 95 background color as default as backup */
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: Arial;
+  margin: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* font-smooth: never; */
+}
+
+/*
+  nav elements based off
+  https://www.w3schools.com/css/css_navbar_vertical.asp
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical_fixed
+*/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: pstart;
+  height: 100%;
+  width: 228px;
+  background-color: #000000;
+  top: 0;
+  position: fixed;
+  overflow: auto;
+}
+
 nav li a{
   display: block;
-  background-color: #000000;
   padding: 8px 16px;
   text-decoration: none;
   color: #00ff00;
-  width: 128px;
+  width: 192px;
+  line-height: 32px;
+  border: 2px solid #00ff00;
+}
+
+nav li a img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav li a:hover {
   background-color: #0f0f0f;
   color: #00ff00;
+}
+
+/* https://www.w3schools.com/css/css_align.asp */
+div {
+  margin-left:30.5%;
+  padding:1px 16px;
 }
