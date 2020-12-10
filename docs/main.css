@@ -133,7 +133,6 @@ div img {
 }
 
 /* Subtracted 1 px because it'll overflow the index.html when it worked before */
-/* WHY ISNT THIS PUSHING */
 div h1 {
   font-size: calc(15px + 1vw); /* Used to be 32 px */
 }
