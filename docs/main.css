@@ -74,10 +74,17 @@ nav li.footer {
   padding: 8px 16px;
 }
 
-nav li.invisible {  /* Hacky workaround for overflow not compensating for the fixed one*/
+/*
+    Hacky workaround for overflow not compensating for the fixed one
+    Also IE is a cursed piece of garbage so it overcompensates like motorcyclists at 11:31 PM
+*/
+nav li.invisible {
   border: none;
   background-color: #000;
   color: #000;
+  width: 192px;
+  display: block;
+  padding: 8px 16px;
 }
 
 nav li.invisible::selection {
@@ -111,6 +118,7 @@ div {
   margin-right:14.5%;
   min-height: calc(100vh - 2px);
   text-align: center;
+  min-width: 120px;
   padding:1px 16px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -120,6 +128,15 @@ div {
 div img {
   max-height: 256px; /* Standard image height, don't override unless you want wacky image heights next to one another */
   max-width: 100%;
-  width: auto
-  height: auto
+  width: auto;
+  height: auto;
+}
+
+/* Subtracted 1 px because it'll overflow the index.html when it worked before */
+div h1 {
+  font-size: calc(15px + 1vw); /* Used to be 32 px */
+}
+
+div p {
+  font-size : calc(7px + 0.5vw); /* Used to be 16px */
 }
