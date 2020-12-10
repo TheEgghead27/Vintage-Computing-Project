@@ -42,32 +42,69 @@ nav ul {
   overflow: auto;
 }
 
-nav li a{
+nav li {
   display: block;
   padding: 8px 16px;
-  text-decoration: none;
   color: #00ff00;
   width: 192px;
   line-height: 32px;
   border: 2px solid #00ff00;
+  border-top: none
 }
 
-nav li a img {
+nav li a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+nav li.topped {
+  border-top: 1px solid #00ff00;
+}
+
+nav li.footer {
+  border: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #000
+}
+
+nav li.invisible {  /* Hacky workaround for overflow not compensating for the fixed one*/
+  border: none;
+  background-color: #000;
+  color: #000;
+}
+
+nav li.invisible::selection {
+  background-color: black;
+  color: black;
+}
+
+nav li img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-nav li a:hover {
+nav li:hover {
   background-color: #0f0f0f;
   color: #00ff00;
+}
+
+nav li.footer:hover {
+  background-color: #000;
+}
+
+nav li.invisible:hover {
+  background-color: black;
+  color: black;
 }
 
 /* https://www.w3schools.com/css/css_align.asp */
 div {
   margin-left: calc(14.5% + 228px);
   margin-right:14.5%;
-  height: calc(100vh - 2px);
+  min-height: calc(100vh - 2px);
   text-align: center;
   padding:1px 16px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -76,6 +113,6 @@ div {
 
 /* https://stackoverflow.com/questions/4684304/how-can-i-resize-an-image-dynamically-with-css-as-the-browser-width-height-chang */
 div img {
-  max-width: 100%;
-  height: auto;
+  width: auto;
+  max-height: 100%;
 }
