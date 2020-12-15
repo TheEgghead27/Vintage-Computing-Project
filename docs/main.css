@@ -137,6 +137,14 @@ div h1 {
   font-size: calc(15px + 1vw); /* Used to be 32 px */
 }
 
+div h2 {
+  font-size: calc(7px + 1vw); /* Targeting 24 px */
+}
+
+div h3 {
+  font-size: calc(2px + 1vw); /* Targeting 18 px */
+}
+
 div p {
   font-size : calc(7px + 0.5vw); /* Used to be 16px */
 }
