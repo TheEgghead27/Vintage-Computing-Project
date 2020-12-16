@@ -130,6 +130,7 @@ div img {
   max-width: 100%;
   width: auto;
   height: auto;
+  padding:8px 8px;
 }
 
 /* Subtracted 1 px because it'll overflow the index.html when it worked before */
@@ -147,4 +148,12 @@ div h3 {
 
 div p {
   font-size : calc(7px + 0.5vw); /* Used to be 16px */
+}
+
+div a {
+  color: #ffffff;
+}
+
+div a:visited {
+  color: #ffffff;
 }

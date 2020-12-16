@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Before you call cheats, note that this is a template I made for this site. -->
-<html lang="en">
+<html lang="en" style="background: url('images/ibmicrosoft.jpg') no-repeat center center fixed;">  <!-- Replace bliss.jpg with path to other images -->
 <link rel="stylesheet" href="main.css">
 <head>
   <meta charset="UTF-8">
@@ -17,18 +17,7 @@
   <meta name="theme-color" content="#000000">
 </head>
 
-<!-- TODO make these backgrounds work well -->
-<style>
-    html:[data-scroll='0'] {
-    "background: url('images/bliss.jpg') no-repeat center center fixed;"
-    }
-
-    html:[data-scroll='2'] {
-    "background: url('images/terminal.gif') no-repeat center center fixed;"
-    }
-
-
-</style>
+<!-- RIP attempt at making a dynamic background -->
 
 <body>
   <!-- navigation bar -->
@@ -46,36 +35,41 @@
 <h1> Operating System </h1>
 <h2> Microsoft Disk Operating System (MS-DOS) </h2>
     <p id="dos">
+        <!--
+        hey do you think stealing images from the web is a good idea
+        sure lol
+        -->
+        <img src="https://miro.medium.com/max/1024/1*o4JJjwIjC_0dgZsEjqZ_mQ@2x.jpeg" alt="Bill Gates posing in a photo with his mother. Image Source: https://chrisgliddon.com/inside-bills-brain-it-s-about-what-you-become-4dbf073002b3" align="right" style="max-height: 128px;"/>
         In Microsoft's early years, they had a deal with IBM (International Business Machines, a major computer manufacturer at the time) to provide an operating system for their new IBM PCs (personal computers).
         The small tech startup managed to get in contact with the largest computer company of the era because Bill Gates's mother, Mary Gates, was a well-connected businesswoman.
-        She was able to get IBM to consider the company "run by Bill Gates, Mary Gates's son" as the prime candidate for providing an operating system.
+        She was able to get IBM to consider the company <a href="https://www.cnbc.com/2020/08/05/how-bill-gates-mother-influenced-the-success-of-microsoft.html"> "run by Bill Gates, Mary Gates's son" </a> as the prime candidate for providing an operating system.
         A key part of the negotiation terms Microsoft gave was the ability for Microsoft to sell their operating system to other manufacturers, IBM could not prevent them from licensing their operating system to other manufacturers, like Compaq.
-        <br />
+        <br /><br />
+        <img src="https://media.bizj.us/view/img/5757731/p9patersontim.jpg" alt="Tim Paterson holding a print-out of the DOS source code, with a sign reading &quot;DOS MAN AT WORK&quot; Image Source: https://www.bizjournals.com/seattle/print-edition/2015/05/01/microsoft-bought-tim-paterson-s-dos-for-75k-the.html" align="right" style="max-height: 164px;"/>
         However, Microsoft didn't have an operating system for the relatively new Intel 8086 chipsets the IBM PC series ran on.
-        Because of this, Microsoft bought Tim Paterson's Seattle Computer Products 86-DOS, also known as the "Quick-and-Dirty Operating System" (QDOS), for a hefty sum of 75 thousand dollars, almost 215 thousand today.
+        Because of this, Microsoft bought <a href="https://www.britannica.com/technology/MS-DOS"> Tim Paterson's Seattle Computer Products 86-DOS, also known as the "Quick-and-Dirty Operating System" (QDOS) </a>, for a hefty sum of <a href="https://microsoft.fandom.com/wiki/MS-DOS"> 75 thousand dollars, </a> <a href="https://www.in2013dollars.com/us/inflation/1981?amount=75000#:~:text=%2475%2C000%20in%201981%20is%20equivalent,cumulative%20price%20increase%20of%20186.28%25.">almost 215 thousand today. </a>
         They then made tweaks to rebrand and release it as the Microsoft Disk Operating System (MS-DOS).
         After this, MS-DOS would be released for a variety of computers under a plethora of manufacturer brands.
         This was the start of Microsoft's software and financial dominance that we still recognize today.
         <br />
     </p>
-    <h3> Where are they now? </h3>
-    <p id="windows">
-        After the advent of the Apple Macintosh, which had a Graphical User Interface (GUI), Microsoft created the Windows desktop environment with the DOS operating system running under the hood.
-        Microsoft saw major success with Windows 3.1, and the DOS kernel was used for Windows until Windows XP, where the new NT kernel replaced DOS.
-        A vast majority of computers run Windows to this day, with Windows XP only recently losing its majority market share, despite being discontinued in 2014.
-    </p>
+    <!-- Did this to group together the image and text -->
+    <!--suppress HtmlUnknownTag -->
+    <customDiv>
+        <img src="images/windows.png" alt="An MS-DOS terminal running in Windows 95." align="left" style="max-height: 200px;"/>
+        <h3 id="windows"> Where are they now? </h3>
+        <p>
+            After the advent of the Apple Macintosh, which had a Graphical User Interface (GUI), Microsoft created the Windows desktop environment with the DOS operating system running under the hood.
+            Microsoft saw major success with Windows 3.1, and the DOS kernel was used for Windows <a href="https://microsoft.fandom.com/wiki/Microsoft_Windows"> until Windows XP, </a> where the new NT kernel replaced DOS.
+            A vast majority of computers run Windows to this day, with Windows XP only recently losing its majority market share, despite being discontinued in 2014.
+        </p>
+    </customDiv>
 
     <!--
     TODO: add images
     also TODO: link to sources directly in page text
      -->
 Sources:
-    https://www.cnbc.com/2020/08/05/how-bill-gates-mother-influenced-the-success-of-microsoft.html
-    https://www.in2013dollars.com/us/inflation/1981?amount=75000#:~:text=%2475%2C000%20in%201981%20is%20equivalent,cumulative%20price%20increase%20of%20186.28%25.
-    https://microsoft.fandom.com/wiki/Microsoft_Windows
-    https://microsoft.fandom.com/wiki/MS-DOS
-    https://www.britannica.com/technology/MS-DOS
-
     https://www.opengroup.org/membership/forums/platform/unix
 </div>
 </body>
