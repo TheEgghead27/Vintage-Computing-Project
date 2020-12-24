@@ -1,11 +1,8 @@
 // randomly generate background CSS
 const path = window.location.pathname.toString();
-console.log(typeof(path));
 if (!path.endsWith("index.html")) {
-  const backgrounds = new Array('7.jpg', 'Bahamas Aerial.jpg', 'Lake.jpg', 'Lion.jpg', 'Mt. Fuji.jpg', 'vista.jpg', 'Wave.jpg', 'Yosemite 2.jpg', 'Yosemite 5.jpg', 'Yosemite.jpg');
+  const backgrounds = new Array('7.jpg', 'Bahamas_Aerial.jpg', 'Lake.jpg', 'Lion.jpg', 'Mt. Fuji.jpg', 'vista.jpg', 'Wave.jpg', 'Yosemite_2.jpg', 'Yosemite_5.jpg', 'Yosemite.jpg');
   const randomNum = Math.floor(Math.random() * backgrounds.length);
-  console.log(Math.floor(Math.random() * backgrounds.length));
-  console.log(Math.random() * backgrounds.length);
   var newCSS = "url('backgrounds/" + backgrounds[randomNum] + "') no-repeat center center fixed";
 }
 else {
