@@ -1,6 +1,6 @@
 // randomly generate background CSS
 const path = window.location.pathname.toString();
-if (!(path.endsWith("index.html")) || (path.endsWith("/"))) {
+if (!((path.endsWith("index.html")) || (path.endsWith("/")))) {
   const backgrounds = new Array('7.jpg', 'Bahamas_Aerial.jpg', 'Lake.jpg', 'Lion.jpg', 'Mt._Fuji.jpg', 'vista.jpg', 'Wave.jpg', 'Yosemite_2.jpg', 'Yosemite_5.jpg', 'Yosemite.jpg');
   const randomNum = Math.floor(Math.random() * backgrounds.length);
   var newCSS = "url('backgrounds/" + backgrounds[randomNum] + "') no-repeat center center fixed";
