@@ -8,7 +8,6 @@ if (!((path.endsWith("index.html")) || (path.endsWith("/")))) {
 else {
   // Homepage is always Windows XP Bliss
   var newCSS = "url('backgrounds/bliss.jpg') no-repeat center center fixed";
-  console.log("Homepage")
 }
 // yes this code is garbage i literally just "learned" javascript to make it so shut up
 
