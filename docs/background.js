@@ -1,4 +1,4 @@
-// randomly generate background CSS
+// yes this code is garbage i literally just "learned" javascript to make it so shut up
 const path = window.location.pathname.toString();
 try {
   var isMain =(!((path.endsWith("index.html")) || (path.endsWith("/"))))
@@ -11,8 +11,8 @@ catch(err) {
   var isMain = true  // screw it when IE doesn't let me check endsWith, just run the randomizer anyways
   }
 }
-// yes this code is garbage i literally just "learned" javascript to make it so shut up
 finally {
+  // randomly generate background CSS
   if (isMain) {
     const backgrounds = new Array('7.jpg', 'Bahamas_Aerial.jpg', 'Lake.jpg', 'Lion.jpg', 'Mt._Fuji.jpg', 'vista.jpg', 'Wave.jpg', 'Yosemite_2.jpg', 'Yosemite_5.jpg', 'Yosemite.jpg');
     const randomNum = Math.floor(Math.random() * backgrounds.length);
