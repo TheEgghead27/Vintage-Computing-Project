@@ -1,14 +1,14 @@
 // yes this code is garbage i literally just "learned" javascript to make it so shut up
 const path = window.location.pathname.toString();
 try {
-  var isMain =(!((path.endsWith("index.html")) || (path.endsWith("/"))))
+  var isMain =(!((path.endsWith("index.html")) || (path.endsWith("/"))));
 }
 catch(err) {
   if (!err.name == "TypeError") {
-    throw err
+    throw err;
   }
   else {
-  var isMain = true  // screw it when IE doesn't let me check endsWith, just run the randomizer anyways
+  var isMain = true;  // screw it when IE doesn't let me check endsWith, just run the randomizer anyways
   }
 }
 finally {
