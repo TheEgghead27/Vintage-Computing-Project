@@ -74,6 +74,7 @@ nav li.footer {
     Also IE is a cursed piece of garbage so it overcompensates like motorcyclists at 11:31 PM
 */
 nav li.invisible {
+  /* visibility: hidden;  // don't do this because it'll make the link inaccessible */
   border: none;
   background-color: #000;
   color: #000;
